@@ -2,6 +2,7 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.5.2",
   "scripts": {},
   "private": true,
   "dependencies": {
@@ -69,5 +70,27 @@
     "typescript-eslint": "^8.40.0",
     "vite": "^7.0.0",
     "vitest": "4.0.9"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "less",
+      "lmdb",
+      "msgpackr-extract",
+      "nx",
+      "unrs-resolver"
+    ],
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "less",
+      "lmdb",
+      "msgpackr-extract",
+      "nx",
+      "unrs-resolver"
+    ]
   }
 }

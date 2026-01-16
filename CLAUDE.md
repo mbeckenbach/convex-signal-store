@@ -11,3 +11,7 @@
 - If the user needs help with an Nx configuration or project graph error, use the `nx_workspace` tool to get any errors
 
 <!-- nx configuration end-->
+
+# Project-Specific Guidelines
+
+- When reading the Nx dependency graph, use the CLI command `npx nx graph --file=stdout` instead of the MCP `nx_workspace` tool. The CLI output is more concise and avoids token limits.
