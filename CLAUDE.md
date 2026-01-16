@@ -15,3 +15,5 @@
 # Project-Specific Guidelines
 
 - When reading the Nx dependency graph, use the CLI command `npx nx graph --file=stdout` instead of the MCP `nx_workspace` tool. The CLI output is more concise and avoids token limits.
+- ALWAYS use Nx CLI generators (`nx g`) for creating Angular-related files such as apps, libraries, components, services, pipes, directives, etc. Never create these files manually.
+- When creating new Angular apps, always use: Tailwind CSS v4, CSS (not SCSS), and Playwright for e2e tests. After generation, upgrade Tailwind to v4 and remove v3 artifacts (tailwind.config.js, autoprefixer).
